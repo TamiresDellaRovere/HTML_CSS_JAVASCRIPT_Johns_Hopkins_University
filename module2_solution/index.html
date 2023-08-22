@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Coding Assignment</title>
+    <style>
+        /********** Base styles **********/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 175%;
+        }
+
+        .menu {
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+
+        .chicken {
+            flex: 1;
+            max-width: 40%;
+            margin: 10px;
+            background-color: gray;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .chicken h2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(235, 173, 135);
+            color: black;
+            padding: 5px;
+            font-size: 125%;
+        }
+
+        .chicken p {
+            text-align: justify;
+            padding: 40px 10px 10px 10px;
+        }
+
+        .beef {
+            flex: 1;
+            max-width: 40%;
+            margin: 10px;
+            background-color: gray;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .beef h2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(223, 90, 69);
+            color: black;
+            padding: 5px;
+            font-size: 125%;
+
+        }
+
+        .beef p {
+            text-align: justify;
+            padding: 40px 10px 10px 10px;
+        }
+
+        .sushi {
+            flex: 1;
+            max-width: 40%;
+            margin: 10px;
+            background-color: gray;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .sushi h2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(231, 219, 86);
+            color: black;
+            padding: 5px;
+            font-size: 125%;
+
+        }
+
+        .sushi p {
+            text-align: justify;
+            padding: 40px 10px 10px 10px;
+        }
+
+
+        /* Media queries for responsive design */
+        @media (max-width: 767px) {
+
+            /* Mobile layout */
+            .menu {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu-item {
+                flex: 1 0 60%;
+                max-width: 60%;
+
+            }
+
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            /* Tablet layout */
+
+            .menu {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu-item .chicken .beef {
+                flex: 1 0 30%;
+                max-width: 30%;
+            }
+
+            .menu-item:nth-child(3) {
+                flex: 1 0 80%;
+                max-width: 80%;
+                clear: both;
+            }
+        }
+
+        @media (min-width: 992px) {
+            /* Desktop layout */
+
+            .menu {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu-item {
+                flex: 1 0 30%;
+                max-width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Our Menu </h1>
+
+    <div class="menu">
+
+        <div class="chicken menu-item">
+            <h2>Chicken</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, necessitatibus recusandae. Soluta impedit
+                consectetur eum beatae quis doloribus voluptas rerum pariatur. Quasi qui tenetur at corrupti harum
+                expedita
+                molestias accusantium.</p>
+        </div>
+
+        <div class="beef menu-item">
+            <h2>Beef</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, necessitatibus recusandae. Soluta impedit
+                consectetur eum beatae quis doloribus voluptas rerum pariatur. Quasi qui tenetur at corrupti harum
+                expedita
+                molestias accusantium.</p>
+        </div>
+
+        <div class="sushi menu-item">
+            <h2>Sushi</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, necessitatibus recusandae. Soluta impedit
+                consectetur eum beatae quis doloribus voluptas rerum pariatur. Quasi qui tenetur at corrupti harum
+                expedita
+                molestias accusantium.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
